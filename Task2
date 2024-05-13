@@ -1,0 +1,15 @@
+new_list = [42, 12, 18]
+def common_divisor(some_list):
+    list = []
+    for i in some_list:
+        list.append([])
+        count = 1
+        while count <= i:
+            if i % count == 0:
+                list[new_list.index(i)].append(int(i / count))
+            count += 1
+    list_divisors = set(list[0]) & set(list[1]) & set(list[2])
+    print(set(list_divisors))
+
+
+common_divisor(new_list)
