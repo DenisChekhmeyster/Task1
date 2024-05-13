@@ -9,4 +9,4 @@ def task1(number):
         print(f"{number} компьютеров")
 
 
-task1(int(input("Введите целое сисло:")))
+task1(int(input("Введите целое число:")))
