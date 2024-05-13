@@ -1,0 +1,27 @@
+number1_start = int(input('Введите целое число 1:'))
+number2_stop = int(input('Введите целое число 2:'))
+
+
+def task3(start, stop):
+    list_total = []
+    prime_number = []
+
+    for i in range(start, stop):
+        count = 1
+        list_divisor = []
+        if i == 1:
+            continue
+        while count*count <= i:
+            if i % count == 0:
+                list_divisor.append(count)
+                if count != i//count:
+                    list_divisor.append(i//count)
+            count += 1
+        list_total.append(list_divisor)
+
+    for j in list_total:
+        if len(j) <= 2:
+            prime_number.append(j.pop(1))
+    return prime_number
+
+print(task3(number1_start, number2_stop))
