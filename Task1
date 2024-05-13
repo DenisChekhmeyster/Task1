@@ -1,9 +1,12 @@
-number = int(input("Введите целое сисло:"))
-if number % 10 == 1:
-    print(f"{number} компьютер")
-elif number in [11, 12, 13, 14]:
-    print(f"{number} компьютеров")
-elif number % 10 in [2, 3, 4]:
-    print(f"{number} компьютера")
-else:
-    print(f"{number} компьютеров")
+def task1(number):
+    if number % 10 == 1:
+        print(f"{number} компьютер")
+    elif number in [11, 12, 13, 14]:
+        print(f"{number} компьютеров")
+    elif number % 10 in [2, 3, 4]:
+        print(f"{number} компьютера")
+    else:
+        print(f"{number} компьютеров")
+
+
+task1(int(input("Введите целое сисло:")))
