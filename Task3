@@ -20,7 +20,7 @@ def task3(start, stop):
         list_total.append(list_divisor)
 
     for j in list_total:
-        if len(j) <= 2:
+        if len(j) == 2:
             prime_number.append(j.pop(1))
     return prime_number
 
