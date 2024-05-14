@@ -1,0 +1,20 @@
+def table(number):
+
+    count_column = 1
+    count_line = 1
+    for i in range(number+1):
+        if i == 0:
+            print(' ', end='')
+        else:
+            print('{txt1:>6}'.format(txt1=str(i)), end='')
+    print()
+    while count_column <= number:
+        print(count_column, end='')
+        while count_line <= number:
+            print('{mult:>6}'.format(mult=count_column * count_line), end='')
+            count_line += 1
+        print()
+        count_column += 1
+        count_line = 1
+
+table(5)
